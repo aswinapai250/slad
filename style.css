@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+h1 {
+    color: #333;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(10, 50px);
+    grid-template-rows: repeat(10, 50px);
+    width: 500px;
+    height: 500px;
+    margin: 20px auto;
+    border: 2px solid #333;
+}
+
+.square {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.player {
+    width: 30px;
+    height: 30px;
+    background-color: #ff0000;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    transition: all 0.5s ease;
+}
+
+.snake {
+    background-color: #ff0000;
+    color: white;
+}
+
+.ladder {
+    background-color: #00ff00;
+    color: white;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+#roll-dice {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+#dice-result {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+#player-position {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
